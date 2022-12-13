@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 ENV TOMCAT_MAJOR_VERSION 10
-ENV TOMCAT_MINOR_VERSION 10.0.5
+ENV TOMCAT_MINOR_VERSION 10.1.4
 ENV CATALINA_HOME /tomcat
 
 RUN wget -q https://downloads.apache.org/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz
